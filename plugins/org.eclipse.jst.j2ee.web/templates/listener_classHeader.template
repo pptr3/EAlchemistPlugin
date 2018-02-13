@@ -1,0 +1,18 @@
+/**
+ * Application Lifecycle Listener implementation class <%= model.getClassName() %>
+ *
+<% 
+	if (model.isAnnotated()) { 
+%>
+ * @web.listener
+<% 
+	}
+%>
+ */
+  <% 
+	if ("3.0".equals(model.getJavaEEVersion()) || "3.1".equals(model.getJavaEEVersion()) ||  "4.0".equals(model.getJavaEEVersion())) { 
+%>
+@WebListener
+<%
+}
+%>

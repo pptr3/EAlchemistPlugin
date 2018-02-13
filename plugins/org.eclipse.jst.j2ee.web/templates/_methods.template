@@ -1,0 +1,24 @@
+<%
+	if (model.shouldImplementAbstractMethods()) {
+		for (Method method : model.getUnimplementedMethods()) { 
+%>
+
+	/**
+     * @see <%= method.getContainingJavaClass() %>#<%= method.getName() %>(<%= method.getParamsForJavadoc() %>)
+     */
+    public <%= method.getReturnType() %> <%= method.getName() %>(<%= method.getParamsForDeclaration() %>) <%  if (method.getExceptions().length() > 0){ %>throws <%=method.getExceptions()%> { 
+    <%}else {%> { <% } %>
+         // TODO Auto-generated method stub
+<% 
+			String defaultReturnValue = method.getDefaultReturnValue();
+			if (defaultReturnValue != null) { 
+%>
+			return <%= defaultReturnValue %>;
+<%
+			} 
+%>
+    }
+<% 
+		}
+	} 
+%>
