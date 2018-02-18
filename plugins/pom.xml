@@ -26,36 +26,10 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>org.eclipse.jem</module>
-    <module>org.eclipse.jem.beaninfo</module>
-    <module>org.eclipse.jem.beaninfo.vm</module>
-    <module>org.eclipse.jem.beaninfo.vm.common</module>
-    <module>org.eclipse.jem.workbench</module>
-    <module>org.eclipse.jem.proxy</module>
-    <module>org.eclipse.jst.common.annotations.controller</module>
-    <module>org.eclipse.jst.common.annotations.core</module>
-    <module>org.eclipse.jst.common.annotations.ui</module>
-    <module>org.eclipse.jst.common.frameworks</module>
-    <module>org.eclipse.jst.common.ui</module>
-    <module>org.eclipse.jst.ejb.ui</module>
-    <module>org.eclipse.jst.j2ee</module>
     <module>org.eclipse.jst.j2ee.core</module>
     <module>org.eclipse.jst.j2ee.ejb</module>
-    <module>org.eclipse.jst.j2ee.ejb.annotation.model</module>
-    <module>org.eclipse.jst.j2ee.ejb.annotations.emitter</module>
-    <module>org.eclipse.jst.j2ee.ejb.annotations.xdoclet</module>
     <module>org.eclipse.jst.j2ee.jca</module>
-    <module>org.eclipse.jst.j2ee.jca.ui</module>
-    <module>org.eclipse.jst.j2ee.navigator.ui</module>
     <module>org.eclipse.jst.j2ee.ui</module>
-    <module>org.eclipse.jst.j2ee.web</module>
-    <module>org.eclipse.jst.j2ee.xdoclet.runtime</module>
-    <module>org.eclipse.jst.jee</module>
-    <module>org.eclipse.jst.jee.ejb</module>
-    <module>org.eclipse.jst.jee.ui</module>
-    <module>org.eclipse.jst.jee.web</module>
-    <module>org.eclipse.jst.servlet.ui</module>
-    <module>org.eclipse.wtp.jee.capabilities</module>
     <module>org.eclipse.wst.jsdt.core</module>
     <module>org.eclipse.wst.jsdt.ui</module>
   </modules>
