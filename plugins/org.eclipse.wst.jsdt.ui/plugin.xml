@@ -153,30 +153,9 @@
 
 	<extension
 		point="org.eclipse.wst.jsdt.ui.javaCompletionProposalComputer"
-		id="javaNoTypeProposalCategory"
-		name="%JavaProposalCategory">
-		<proposalCategory
-			icon="$nl$/icons/full/elcl16/javaassist_co.gif"/>
-	</extension>
-	<extension
-		point="org.eclipse.wst.jsdt.ui.javaCompletionProposalComputer"
 		id="defaultProposalCategory"
 		name="%DefaultProposalCategory">
 		<proposalCategory/>
-	</extension>
-	<extension
-		point="org.eclipse.wst.jsdt.ui.javaCompletionProposalComputer"
-		id="templateProposalCategory"
-		name="%TemplateProposalCategory">
-		<proposalCategory
-			icon="$nl$/icons/full/elcl16/templateprop_co.gif"/>
-	</extension>
-	<extension
-		point="org.eclipse.wst.jsdt.ui.javaCompletionProposalComputer"
-		id="textProposalCategory"
-		name="%TextProposalCategory">
-		<proposalCategory
-			icon="$nl$/icons/full/elcl16/wordassist_co.gif"/>
 	</extension>
 
 	<extension
@@ -490,7 +469,7 @@
 			name="New Protelis File"
 			class="org.eclipse.wst.jsdt.internal.ui.wizards.NewJSWizard"
 			category="org.eclipse.jst.j2ee.internal"
-			icon="$nl$/icons/full/obj16/protelis.gif">
+			icon="/icons/full/fileIcons/protelis.gif">
 			<description>%wizard.description.0</description>
 			<selection class="org.eclipse.core.resources.IResource" />
 		</wizard>
@@ -500,7 +479,7 @@
 			name="New Protelis File"
 			class="org.eclipse.wst.jsdt.internal.ui.wizards.NewJSWizard"
 			category="org.eclipse.jst.j2ee.internal"
-			icon="$nl$/icons/full/obj16/protelis.gif">
+			icon="/icons/full/fileIcons/protelis.gif">
 			<description>%wizard.description.0</description>
 			<selection class="org.eclipse.core.resources.IResource" />
 		</wizard>
@@ -719,7 +698,7 @@
       <editor
             name="%CompilationUnitEditorName"
             default="true"
-            icon="$nl$/icons/full/obj16/protelis.gif"
+            icon="/icons/full/fileIcons/protelis.gif"
             contributorClass="org.eclipse.wst.jsdt.internal.ui.javaeditor.CompilationUnitEditorActionContributor"
             class="org.eclipse.wst.jsdt.internal.ui.javaeditor.CompilationUnitEditor"
             symbolicFontName="org.eclipse.wst.jsdt.ui.editors.textfont"
@@ -1346,7 +1325,7 @@
             id="org.eclipse.wst.jsdt.ui.JavaElementCreationActionSet">
          <action
                label="%wizard.name.0"
-               icon="$nl$/icons/full/obj16/protelis.gif">
+               icon="/icons/full/fileIcons/protelis.gif">
                tooltip="%Javascript_UI_Wizard_New_Title"
                class="org.eclipse.wst.jsdt.internal.ui.wizards.OpenJavaScriptFileWizardToolbarAction"
                toolbarPath="Normal/JavaWizards"
