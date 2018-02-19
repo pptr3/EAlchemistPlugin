@@ -1,4 +1,4 @@
-.jca --> need to cover Connector project (just for that? Try to delete it's source code)
+.jca --> need to cover Connector project
 j2ee.ui --> need to edito Java EE to Alchemist
 jsdt.core --> need to change extension from [js] to [protelis(custom)]
 jsdt.ui --> need to create a new custom file
