@@ -26,7 +26,7 @@
 <!-- Alchemist Project Wizard -->
       <wizard
             name="%appclient_component_ui_"
-            icon="icons/full/alchemist/alchemist_logo.gif"
+            icon="$nl$/icons/full/obj16/alchemist_logo.gif"
             category="org.eclipse.jst.j2ee.internal"
             project="true"
             finalPerspective="org.eclipse.jst.j2ee.J2EEPerspective"
