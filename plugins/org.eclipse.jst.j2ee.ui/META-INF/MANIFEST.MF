@@ -6,8 +6,7 @@ Bundle-Version: 1.1.930.qualifier
 Bundle-Activator: org.eclipse.jst.j2ee.internal.plugin.J2EEUIPlugin
 Bundle-Vendor: %Bundle-Vendor.0
 Bundle-Localization: plugin
-Export-Package: org.eclipse.jst.common.jdt.internal.integration.ui;x-internal:=true,
- org.eclipse.jst.j2ee.internal;x-internal:=true,
+Export-Package: org.eclipse.jst.j2ee.internal;x-internal:=true,
  org.eclipse.jst.j2ee.internal.actions;x-internal:=true,
  org.eclipse.jst.j2ee.internal.classpathdep.ui,
  org.eclipse.jst.j2ee.internal.command;x-internal:=true,
