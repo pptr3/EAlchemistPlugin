@@ -47,7 +47,7 @@ public class AppClientProjectWizard extends NewProjectDataModelFacetWizard {
 	@Override
 	protected ImageDescriptor getDefaultPageImageDescriptor() {
 		final Bundle bundle = Platform.getBundle(J2EEUIPlugin.PLUGIN_ID);
-		final URL url = bundle.getEntry("icons/full/wizban/logo-Alchemist.png"); //$NON-NLS-1$
+		final URL url = bundle.getEntry("icons/full/wizban/appclient_wiz.gif"); //$NON-NLS-1$
 		return ImageDescriptor.createFromURL(url);
 	}
 
