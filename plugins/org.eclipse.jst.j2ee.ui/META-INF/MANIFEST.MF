@@ -9,7 +9,6 @@ Bundle-Localization: plugin
 Export-Package: org.eclipse.jst.j2ee.internal;x-internal:=true,
  org.eclipse.jst.j2ee.internal.actions;x-internal:=true,
  org.eclipse.jst.j2ee.internal.plugin;x-internal:=true,
- org.eclipse.jst.j2ee.internal.provider;x-internal:=true,
  org.eclipse.jst.j2ee.internal.ui;x-internal:=true,
  org.eclipse.jst.j2ee.internal.ui.util;x-internal:=true,
  org.eclipse.jst.j2ee.internal.war.ui.util;x-internal:=true,
