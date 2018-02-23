@@ -13,7 +13,6 @@ Export-Package:
  org.eclipse.jst.j2ee.internal.ejb.provider;x-internal:=true,
  org.eclipse.jst.j2ee.internal.plugin;x-internal:=true,
  org.eclipse.jst.j2ee.internal.provider;x-internal:=true,
- org.eclipse.jst.j2ee.internal.ui.util;x-internal:=true,
  org.eclipse.jst.j2ee.internal.wizard;x-internal:=true,
  org.eclipse.jst.j2ee.ui.project.facet,
  org.eclipse.jst.j2ee.ui.project.facet.appclient
