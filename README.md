@@ -4,9 +4,11 @@ EAlchemistPlugin is an Eclipse plugin created in order to facilitate the creatio
 
 
 ### Premise
-This plugin has been built merging two existing projects([webtools.javaee], [webtools.jsdt] 
+
+The features that this project needed it's the same that many other Eclipse plugins offers, so we took from these two Eclipse plugins ([webtools.javaee], [webtools.jsdt]) what we needed and merge it. Due that, many file still have the original-old name and there is a bunch of source file that need to be delete because probably useless.
 
 ### Importing the project
+
 The project has been developed using Eclipse, and can be easily imported in such IDE.
 
 #### Recommended configuration
@@ -86,15 +88,17 @@ The project has been developed using Eclipse, and can be easily imported in such
 * Finish.
 
 
-#### Create New Protelis File
-* Once you have created an Alchemist Project, for creating new Protelis file, go to File -> New -> Project... -> Other... -> Alchemist -> `New Protelis File`
+#### Create New Custom File
+* Once you have created an Alchemist Project, for creating new custom file, go to File -> New -> Project... -> Other... -> Alchemist -> `New Protelis File` (in this demo i've choosed `protelis` extension, it can be easily changed, take a look in Developing the project section down below)
 * Click Next
 * Insert a name for your file
 * Select the project
 * Finish.
 
-
-
+### Developing the project
+* Contributions to this project are welcome. The main features (creating new custom projects and new custom files) has been     implemented, however need to do other thins such as clean up the project of all the things and file useless.
+* The built demo consist in creating and Alchemist projects and Protelis files. If you want to change the name and properties of the custom project, take a look at `EAlchemistPlugin/plugins/org.eclipse.jst.j2ee.ui/plugin.xml` file. You can easily change the wizard immediatly underneath the comment `<!--Alchemist Project Wizard-->` as you prefer. You can even add a new wizard and with some code in `EAlchemistPlugin/plugins/org.eclipse.jst.j2ee.ui/` package you can create your own custom project.
+* If you want to create others custom file, take a look at `EAlchemistPlugin/plugins/org.eclipse.wst.jsdt.ui/plugin.xml` line 488.  You can easily change the wizard immediatly underneath the comment `<!--Create new Protelis File-->` as you prefer or you can copy that wizard and paste in the same parent `<extension>` to have a new type of custom file. In this case the only things that actually you can change in plugin.xml is the name and icon of the custom file, to change the extension of the new custom file that you want to introduce i recommend to search where is located the keyword `protelis` (that is the default extension) through this bash command `grep -wrn '/path/to/repo/EAlchemistPlugin/plugins/' -e 'protelis'` and write your code to change all instances that appears dinamically in order to create many custom files, each one with a different extension.
 
 [Alchemist]: http://alchemistsimulator.github.io/
 [eclipse]: https://eclipse.org/downloads/
