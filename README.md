@@ -1,20 +1,10 @@
-# AlchemistPlugin
+# EAlchemistPlugin
 
-AlchemistPlugin is an Eclipse plugin created in order to facilitate the creation of new Alchemist projects. [What is Alchemist?][Alchemist].
-
-
-## Status Badges
-
-#### Stable branch
-[![Build Status](https://travis-ci.org/AlchemistSimulator/Alchemist.svg?branch=master)](https://travis-ci.org/Pptr95/EAlchemistPlugin)
-[![Javadocs](https://www.javadoc.io/badge/it.unibo.alchemist/alchemist.svg)](https://www.javadoc.io/doc/it.unibo.alchemist/alchemist)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c7304e8bd4044aa5955c6d5c844f39a4)](https://www.codacy.com/app/Alchemist/Alchemist?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AlchemistSimulator/Alchemist&amp;utm_campaign=Badge_Grade)
-
-#### Development branch
-[![Build Status](https://travis-ci.org/AlchemistSimulator/Alchemist.svg?branch=develop)](https://travis-ci.org/AlchemistSimulator/Alchemist)
+EAlchemistPlugin is an Eclipse plugin created in order to facilitate the creation of new Alchemist projects. [What is Alchemist?][Alchemist].
 
 
-## Notes for Developers
+### Premise
+This plugin has been built merging two existing projects([webtools.javaee], [webtools.jsdt] 
 
 ### Importing the project
 The project has been developed using Eclipse, and can be easily imported in such IDE.
@@ -30,15 +20,11 @@ The project has been developed using Eclipse, and can be easily imported in such
     umake ide eclipse 
     ```
 * Install the required eclipse plugins:
-  * In Eclipse, click "Help" -> "Eclipse Marketplace..."
-  * In the search field enter "findbugs", then press Enter
-  * One of the retrieved entries should be "FindBugs Eclipse Plugin", click Install
-  * Click "< Install More"
   * In the search field enter "checkstyle", then press Enter
   * One of the retrieved entries should be "Checkstyle Plug-in" with a written icon whose text is "eclipse-cs", click Install
   * Click "< Install More"
   * In the search field enter "eclipse pde", then press Enter
-  * One of the retrieved entries should be "Eclipse PDE (Plug-in Development Environment)", click Install
+  * One of the retrieved entries should be "Eclipse PDE (Plug-in Development Environment) X.Y Luna", click Install
   * Click "Install Now >"
   * Wait for Eclipse to resolve all the features
   * Click "Confirm >"
@@ -70,12 +56,12 @@ The project has been developed using Eclipse, and can be easily imported in such
 #### Import Procedure
 * Install git on your system, if you haven't yet
 * Pull up a terminal, and `cd` to the folder where you want the project to be cloned (presumably, your Eclipse workspace)
-* Clone the project with `git clone git@github.com:Pptr95/AlchemistPlugin.git`
-  * If you are a Windows user, you might find easier to import via HTTPS: `git clone https://github.com/Pptr95/AlchemistPlugin.git`
+* Clone the project with `git clone git@github.com:Pptr95/EAlchemistPlugin.git`
+  * If you are a Windows user, you might find easier to import via HTTPS: `git clone https://github.com/Pptr95/EAlchemistPlugin.git`
 * In terminal type `git branch`. This shows you all the branches. If you only have the master branch type `git branch -a` to see local and remote branches. For add a remote branch to your local repository type `git checkout -b <branch-name> origin/<branch-name>`. For switch between branches use `git checkout <branch-name>`.
 * Open Eclipse
 * Click File -> Import -> Maven -> Existing Maven Projects -> Next
-* Select the folder that has been created after the cloning (presumably `AlchemistPlugin`)
+* Select the folder that has been created after the cloning (presumably `EAlchemistPlugin`)
 * Finish
 * Wait for Eclipse to build the workspace
 * The projects will appear in your projects list.
@@ -87,14 +73,13 @@ The project has been developed using Eclipse, and can be easily imported in such
 * Choose a custom name
 * Go to Plug-ins tab
 * In `Launch with:` select "features selected below"
-* The click on the "Add Plug-ins..." button on the right column and add all the listed plug-ins (to make this operation faster select one plug-in and press the combination `ctrl + A`)
-* Click Ok
+* Click Apply
 * Click Run
 * If a Validation window appears, just press Continue
 * Wait the loading of the new workspace.
 
 #### Create New Alchemist Project
-* Once you have ran the plug-in go to File -> New -> Project... -> Check the box "Show All Wizards." -> Alchemist -> `Alchemist Project`
+* Once you have ran the plug-in go to File -> New -> Project... -> Alchemist (if you don't see it, check the box "Show All Wizards.") -> `Alchemist Project`
 * Click Next
 * If a Confirm Enablement window appears, just press Ok
 * Insert the name of the project
@@ -102,28 +87,16 @@ The project has been developed using Eclipse, and can be easily imported in such
 
 
 #### Create New Protelis File
-* Once you have ran the plug-in go to File -> New -> Project... -> Other... -> Alchemist -> `New Protelis File`
+* Once you have created an Alchemist Project, for creating new Protelis file, go to File -> New -> Project... -> Other... -> Alchemist -> `New Protelis File`
 * Click Next
 * Insert a name for your file
 * Select the project
 * Finish.
 
 
-#### Building the project
-For building the project just point a terminal on the project's root and issue
-
-```bash
-mvn build
-```
-###Developing the project
-
-<things todo ans missing>
 
 
 [Alchemist]: http://alchemistsimulator.github.io/
-[Javadoc]: http://alchemist-doc.surge.sh/
-[Javadoc-unstable]: http://alchemist-unstable-doc.surge.sh/
-[reports-unstable]: http://alchemist-unstable-reports.surge.sh/build/reports/buildDashboard/
-[reports]: http://alchemist-reports.surge.sh/build/reports/buildDashboard/
 [eclipse]: https://eclipse.org/downloads/
-
+[webtools.javaee]: https://github.com/eclipse/webtools.javaee
+[webtools.jsdt]: http://git.eclipse.org/c/jsdt/webtools.jsdt.git/tree/
