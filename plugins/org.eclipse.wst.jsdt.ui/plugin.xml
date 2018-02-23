@@ -494,16 +494,6 @@
 			<description>%wizard.description.0</description>
 			<selection class="org.eclipse.core.resources.IResource" />
 		</wizard>
-		
-		<wizard
-			id="org.eclipse.wst.jsdt.ui.NewJSWizard"
-			name="New Protelis File"
-			class="org.eclipse.wst.jsdt.internal.ui.wizards.NewJSWizard"
-			category="org.eclipse.jst.j2ee.internal"
-			icon="$nl$/icons/full/obj16/protelis.gif">
-			<description>%wizard.description.0</description>
-			<selection class="org.eclipse.core.resources.IResource" />
-		</wizard>
 
    </extension>
    <extension
