@@ -26,12 +26,9 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>org.eclipse.jst.j2ee.core</module>
-    <module>org.eclipse.jst.j2ee.ejb</module>
-    <module>org.eclipse.jst.j2ee.jca</module>
-    <module>org.eclipse.jst.j2ee.jca.ui</module>
+    <!--<module>org.eclipse.jst.j2ee.jca</module>
     <module>org.eclipse.jst.j2ee.ui</module>
+    <module>org.eclipse.wst.jsdt.ui</module>-->
     <module>org.eclipse.wst.jsdt.core</module>
-    <module>org.eclipse.wst.jsdt.ui</module>
   </modules>
 </project>
