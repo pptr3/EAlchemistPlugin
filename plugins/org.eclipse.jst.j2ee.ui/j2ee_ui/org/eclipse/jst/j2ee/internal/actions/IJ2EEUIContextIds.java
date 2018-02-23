@@ -8,7 +8,10 @@
  * Contributors:
  * IBM Corporation - initial API and implementation
  *******************************************************************************/
-package org.eclipse.jst.j2ee.internal.plugin;
+package org.eclipse.jst.j2ee.internal.actions;
+
+import org.eclipse.jst.j2ee.internal.plugin.J2EEUIPlugin;
+
 
 /**
  * Insert the type's description here. Creation date: (9/6/2001 12:23:02 PM)
