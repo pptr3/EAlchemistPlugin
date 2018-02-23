@@ -9,8 +9,6 @@ Bundle-Localization: plugin
 Export-Package: 
  org.eclipse.jst.j2ee.internal;x-internal:=true,
  org.eclipse.jst.j2ee.internal.actions;x-internal:=true,
- org.eclipse.jst.j2ee.internal.classpathdep.ui,
- org.eclipse.jst.j2ee.internal.client.actions;x-internal:=true,
  org.eclipse.jst.j2ee.internal.command;x-internal:=true,
  org.eclipse.jst.j2ee.internal.dialogs;x-internal:=true,
  org.eclipse.jst.j2ee.internal.ejb.provider;x-internal:=true,
