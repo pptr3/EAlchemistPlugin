@@ -12,6 +12,7 @@ package org.eclipse.jst.j2ee.internal.provider;
 
 
 import java.io.File;
+
 import java.net.URL;
 
 import org.eclipse.core.resources.IFile;
