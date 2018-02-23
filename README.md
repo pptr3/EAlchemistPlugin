@@ -81,7 +81,7 @@ The project has been developed using Eclipse, and can be easily imported in such
 * Wait the loading of the new workspace.
 
 #### Create New Alchemist Project
-* Once you have ran the plug-in go to File -> New -> Project... -> Alchemist (if you don't see it, check the box "Show All Wizards.") -> `Alchemist Project`
+* Once you have ran the plug-in go, to File -> New -> Project... -> Alchemist (if you don't see it, check the box "Show All Wizards.") -> `Alchemist Project`
 * Click Next
 * If a Confirm Enablement window appears, just press Ok
 * Insert the name of the project
@@ -89,16 +89,16 @@ The project has been developed using Eclipse, and can be easily imported in such
 
 
 #### Create New Custom File
-* Once you have created an Alchemist Project, for creating new custom file, go to File -> New -> Project... -> Other... -> Alchemist -> `New Protelis File` (in this demo i've choosed `protelis` extension, it can be easily changed, take a look in Developing the project section down below)
+* Once you have created an Alchemist Project, for creating new custom file, go to File -> New -> Project... -> Other... -> Alchemist -> `New Protelis File` (in this demo i've choosed `protelis` extension, it can be easily changed, take a look in "Developing the project" section down below)
 * Click Next
 * Insert a name for your file
 * Select the project
 * Finish.
 
 ### Developing the project
-* Contributions to this project are welcome. The main features (creating new custom projects and new custom files) has been     implemented, however need to do other thins such as clean up the project of all the things and file useless.
+* Contributions to this project are welcome. The main features (creating new custom projects and new custom files) has been     implemented, however need to do other things such as clean up the project of all the things and file useless.
 * The built demo consist in creating and Alchemist projects and Protelis files. If you want to change the name and properties of the custom project, take a look at `EAlchemistPlugin/plugins/org.eclipse.jst.j2ee.ui/plugin.xml` file. You can easily change the wizard immediatly underneath the comment `<!--Alchemist Project Wizard-->` as you prefer. You can even add a new wizard and with some code in `EAlchemistPlugin/plugins/org.eclipse.jst.j2ee.ui/` package you can create your own custom project.
-* If you want to create others custom file, take a look at `EAlchemistPlugin/plugins/org.eclipse.wst.jsdt.ui/plugin.xml` line 488.  You can easily change the wizard immediatly underneath the comment `<!--Create new Protelis File-->` as you prefer or you can copy that wizard and paste in the same parent `<extension>` to have a new type of custom file. In this case the only things that actually you can change in plugin.xml is the name and icon of the custom file, to change the extension of the new custom file that you want to introduce i recommend to search where is located the keyword `protelis` (that is the default extension) through this bash command `grep -wrn '/path/to/repo/EAlchemistPlugin/plugins/' -e 'protelis'` and write your code to change all instances that appears dinamically in order to create many custom files, each one with a different extension.
+* If you want to create others custom file, take a look at `EAlchemistPlugin/plugins/org.eclipse.wst.jsdt.ui/plugin.xml` line 488.  You can easily change the wizard immediatly underneath the comment `<!--Create new Protelis File-->` as you prefer or copy that wizard and paste in the same parent `<extension>` to have a new type of custom file. In this case the only things that actually you can change in plugin.xml is the name and icon of the custom file, to change the extension of the new custom file that you want to introduce i recommend to search where is located the keyword `protelis` (that is the default extension) through the bash command `grep -wrn '/path/to/repo/EAlchemistPlugin/plugins/' -e 'protelis'` and write code to change all instances that appears in order to create many custom files, each one with a different extension.
 
 [Alchemist]: http://alchemistsimulator.github.io/
 [eclipse]: https://eclipse.org/downloads/
